@@ -1,6 +1,6 @@
 $indent_1: 5px;
-$indent_2: 10px;
-$indent_3: 15px;
+$indent_2: 15px;
+$indent_3: 30px;
 
 .link-unstyled {
   &,
@@ -245,4 +245,9 @@ $indent_3: 15px;
 
 .pb-3 {
   padding-bottom: $indent_3;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
 }
