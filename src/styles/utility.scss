@@ -75,10 +75,6 @@ $indent_3: 30px;
   display: block;
 }
 
-.d-flex {
-  display: flex;
-}
-
 .d-inline-flex {
   display: inline-flex;
 }
@@ -89,18 +85,6 @@ $indent_3: 30px;
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-content-between {
-  justify-content: space-between !important;
-}
-
-.justify-content-center {
-  justify-content: center;
 }
 
 .padded {
@@ -244,6 +228,19 @@ $indent_3: 30px;
   text-align: center;
 }
 
+.d-flex {
+  display: flex !important;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
 .height-300 {
   height: 300px !important;
 }
