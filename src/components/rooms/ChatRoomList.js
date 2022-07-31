@@ -10,8 +10,9 @@ const ChatRoomList = ({ aboveElHeight }) => {
 
   return (
     <Nav
-      appearance="subtle"
+      vertical
       reversed
+      appearance="subtle"
       className="overflow-y-scroll custom-scroll"
       style={{
         height: `calc(100% - ${aboveElHeight}px)`,
