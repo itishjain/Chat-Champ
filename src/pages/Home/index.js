@@ -7,7 +7,7 @@ import { useMediaQuery } from "../../misc/custom-hooks";
 import Chat from "./Chat";
 
 const Home = () => {
-  const isDesktop = useMediaQuery("(min-width: 992px)");
+  const isDesktop = useMediaQuery("(min-width: 993px)");
 
   const { isExact } = useRouteMatch();
 

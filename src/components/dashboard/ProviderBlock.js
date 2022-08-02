@@ -4,11 +4,11 @@ import { Alert, Button, Icon, Tag } from "rsuite";
 import { auth } from "../../misc/firebase";
 
 const ProviderBlock = () => {
-  const [isConnnected, setIsConnected] = useState({
-    "google.com": auth.currentUser.providerData.some(
+  const [isConnected, setIsConnected] = useState({
+    "google.com": auth.currentUser?.providerData?.some(
       (data) => data.providerId === "google.com"
     ),
-    "facebook.com": auth.currentUser.providerData.some(
+    "facebook.com": auth.currentUser?.providerData?.some(
       (data) => data.providerId === "facebook.com"
     ),
   });
@@ -65,27 +65,27 @@ const ProviderBlock = () => {
 
   return (
     <div className="mt-2">
-      {isConnnected["google.com"] && (
+      {isConnected["google.com"] && (
         <Tag color="green" closable onClose={unlinkGoogle}>
           <Icon icon="google">
             <span className="ml-1">Connected</span>
           </Icon>
         </Tag>
       )}
-      {isConnnected["facebook.com"] && (
+      {isConnected["facebook.com"] && (
         <Tag color="blue" closable onClose={unlinkFacebook}>
           <Icon icon="facebook" />
           <span className="ml-1">Connected</span>
         </Tag>
       )}
       <div className="mt-2">
-        {!isConnnected["google.com"] && (
+        {!isConnected["google.com"] && (
           <Button block color="green" onClick={linkGoogle}>
             <Icon icon="google" />
             <span className="ml-1">Sign in with Google</span>
           </Button>
         )}
-        {!isConnnected["facebook.com"] && (
+        {!isConnected["facebook.com"] && (
           <Button block color="blue" onClick={linkFacebook}>
             <Icon icon="facebook" />
             <span className="ml-1">Sign in with Facebook</span>

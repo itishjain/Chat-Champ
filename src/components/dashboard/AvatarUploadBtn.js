@@ -94,11 +94,11 @@ const AvatarUploadBtn = () => {
   };
 
   return (
-    <div className="mt-3 text-center">
+    <div className="mt-2 text-center">
       <ProfileAvatar
         src={profile.avatar}
         name={profile.name}
-        className="width-300 height-300 img-fullsize font-huge"
+        className="width-200 height-200 img-fullsize font-huge"
       />
 
       <div>
@@ -126,10 +126,10 @@ const AvatarUploadBtn = () => {
                 <AvatarEditor
                   ref={avatarEditorRef}
                   image={img}
-                  width={300}
-                  height={300}
+                  width={200}
+                  height={200}
                   border={10}
-                  borderRadius={300}
+                  borderRadius={200}
                 />
               )}
             </div>

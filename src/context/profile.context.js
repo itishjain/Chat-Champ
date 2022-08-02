@@ -26,6 +26,7 @@ export const ProfileProvider = ({ children }) => {
       console.log("Auth Object : ", authObj);
 
       if (authObj) {
+        console.log("Id : ", authObj.uid);
         userStatusRef = database.ref(`/status/${authObj.uid}`);
         userRef = database.ref(`/profiles/${authObj.uid}`);
 

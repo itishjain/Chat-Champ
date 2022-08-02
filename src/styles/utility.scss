@@ -31,16 +31,8 @@ $indent_3: 30px;
   overflow-y: scroll;
 }
 
-.width-300 {
-  width: 300px !important;
-}
-
 .width-200 {
-  width: 200px;
-}
-
-.height-200 {
-  height: 200px;
+  width: 200px !important;
 }
 
 .w-100 {
@@ -99,10 +91,6 @@ $indent_3: 30px;
 
 .ws-nowrap {
   white-space: nowrap;
-}
-
-.br-circle {
-  border-radius: 50%;
 }
 
 .font-bolder {
@@ -227,6 +215,9 @@ $indent_3: 30px;
   margin: 0 auto;
   text-align: center;
 }
+.br-circle {
+  border-radius: 50% !important;
+}
 
 .d-flex {
   display: flex !important;
@@ -241,8 +232,8 @@ $indent_3: 30px;
 .justify-content-between {
   justify-content: space-between !important;
 }
-.height-300 {
-  height: 300px !important;
+.height-200 {
+  height: 200px !important;
 }
 
 .h-100 {
